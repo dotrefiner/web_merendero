@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Olla del merendero">
+  <rect width="64" height="64" rx="14" fill="#2E5E45"/>
+  <path d="M25 20c0-4 3.5-4 3.5-8M35 20c0-4 3.5-4 3.5-8" fill="none" stroke="#F6D98E" stroke-width="3" stroke-linecap="round"/>
+  <path d="M15 31h34v5a17 17 0 0 1-17 17 17 17 0 0 1-17-17z" fill="#FBF7EE"/>
+  <path d="M11 29h42" fill="none" stroke="#E9B44C" stroke-width="5" stroke-linecap="round"/>
+</svg>

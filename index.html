@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Merendero En Construcción: comida, comunidad y un espacio que se sostiene entre todos. Conocé qué hacemos, cómo donar y dónde encontrarnos.">
+  <meta name="theme-color" content="#2E5E45">
+  <title>Merendero En Construcción | Comida y comunidad</title>
+
+  <!-- Ícono de la pestaña del navegador -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Tipografías: Fraunces para títulos e Inter para textos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos del sitio -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Enlace para saltar al contenido usando el teclado -->
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- =====================================================
+       ENCABEZADO Y NAVEGACIÓN
+       El menú móvil se abre con un checkbox: no usa JavaScript.
+       ===================================================== -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Menú principal">
+
+      <a class="brand" href="#inicio">
+        <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#2E5E45"/>
+          <path d="M25 20c0-4 3.5-4 3.5-8M35 20c0-4 3.5-4 3.5-8" fill="none" stroke="#F6D98E" stroke-width="3" stroke-linecap="round"/>
+          <path d="M15 31h34v5a17 17 0 0 1-17 17 17 17 0 0 1-17-17z" fill="#FBF7EE"/>
+          <path d="M11 29h42" fill="none" stroke="#E9B44C" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+        <span class="brand__text">
+          <strong>Merendero</strong>
+          <span>En Construcción</span>
+        </span>
+      </a>
+
+      <!-- Checkbox oculto que controla el menú hamburguesa -->
+      <input class="nav__checkbox" type="checkbox" id="menu-toggle" aria-label="Abrir o cerrar el menú">
+      <label class="nav__toggle" for="menu-toggle" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <div class="nav__menu">
+        <ul class="nav__list">
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#que-hacemos">Qué hacemos</a></li>
+          <li><a href="#donar">Donar</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <a class="btn btn--primary nav__cta" href="#donar">Donar</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+
+    <!-- =====================================================
+         1. PORTADA
+         ===================================================== -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero__media">
+        <img src="assets/hero.jpg" alt="Mujer cocinando en una olla grande al aire libre, entre vapor" fetchpriority="high">
+      </div>
+
+      <div class="container hero__content">
+        <p class="hero__eyebrow">
+          <span class="hero__dot" aria-hidden="true"></span>
+          Merendero comunitario · En construcción
+        </p>
+
+        <h1 id="hero-title">Un plato caliente,<br>una <em>comunidad</em> que crece.</h1>
+
+        <p class="hero__text">
+          Somos un merendero comunitario: cocinamos para las familias del barrio
+          y trabajamos cada día para sostener un espacio digno donde compartir
+          la mesa, aprender y encontrarnos.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#donar">Quiero donar <span aria-hidden="true">→</span></a>
+          <a class="btn btn--outline" href="#nosotros">Conocé el merendero</a>
+        </div>
+
+        <!-- REEMPLAZAR: ubicación de ejemplo (Obelisco) -->
+        <p class="hero__footnote">
+          <span aria-hidden="true">●</span>
+          Obelisco, CABA · Comida y comunidad desde 2018
+        </p>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         2. QUIÉNES SOMOS
+         ===================================================== -->
+    <section class="about section" id="nosotros" aria-labelledby="about-title">
+      <div class="container about__grid">
+
+        <div class="about__media">
+          <img src="assets/nosotros.jpg" alt="Voluntaria sonriendo mientras cocina en una olla grande a fuego abierto" loading="lazy">
+          <div class="about__badge">
+            <strong>Desde 2018</strong>
+            <span>cocinando en el barrio</span>
+          </div>
+        </div>
+
+        <div class="about__content">
+          <p class="eyebrow">Quiénes somos</p>
+          <h2 id="about-title">Una olla que empezó a juntar gente</h2>
+
+          <p class="lead">
+            El Merendero En Construcción nació cuando un grupo de vecinas y vecinos
+            empezó a cocinar viandas en una cocina prestada para las familias del barrio.
+          </p>
+          <p>
+            Lo que comenzó como un almuerzo por semana hoy es un encuentro de todos
+            los días. Con el apoyo de la comunidad sostenemos un espacio propio: una
+            cocina segura, un salón para comer y un lugar donde también hay apoyo
+            escolar, talleres y mates compartidos.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         3. QUÉ HACEMOS
+         ===================================================== -->
+    <section class="what section" id="que-hacemos" aria-labelledby="what-title">
+      <div class="container">
+
+        <div class="section-head">
+          <p class="eyebrow">Qué hacemos</p>
+          <h2 id="what-title">Más que un plato de comida</h2>
+          <p>
+            Cada encuentro es una excusa para acompañar a las familias y sostener,
+            entre todos, este merendero.
+          </p>
+        </div>
+
+        <div class="cards">
+
+          <article class="card">
+            <div class="card__media">
+              <img src="assets/viandas.jpg" alt="Persona sirviendo una porción de comida en un plato" loading="lazy">
+            </div>
+            <div class="card__body">
+              <p class="card__tag">Alimentación</p>
+              <h3>Viandas y meriendas</h3>
+              <p>
+                Cocinamos almuerzos y meriendas para 180 personas por semana.
+                La comida se entrega para llevar y también se comparte en el merendero.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img src="assets/apoyo.jpg" alt="Dos chicos haciendo tareas y dibujando en una mesa" loading="lazy">
+            </div>
+            <div class="card__body">
+              <p class="card__tag">Educación</p>
+              <h3>Apoyo escolar</h3>
+              <p>
+                Acompañamos las tareas de chicas y chicos del barrio dos veces por
+                semana, con libros, útiles y mucha paciencia.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img src="assets/comunidad.jpg" alt="Grupo de personas compartiendo una comida alrededor de una mesa" loading="lazy">
+            </div>
+            <div class="card__body">
+              <p class="card__tag">Comunidad</p>
+              <h3>Encuentros y talleres</h3>
+              <p>
+                Organizamos talleres de oficios, arte y huerta, además de celebraciones
+                para juntar a las familias y pensar juntos el barrio que queremos.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         4. DONACIONES
+         REEMPLAZAR: alias, CBU, link de Mercado Pago y teléfono
+         ===================================================== -->
+    <section class="donate section" id="donar" aria-labelledby="donate-title">
+      <div class="container">
+
+        <div class="donate__intro">
+          <div>
+            <p class="eyebrow eyebrow--light">Donar</p>
+            <h2 id="donate-title">Ayudanos a seguir ayudando, merienda a merienda</h2>
+            <p>
+              Somos un merendero comunitario y todo lo que donás nos ayuda a
+              mantenerlo funcionando: afrontar los gastos de servicios como luz,
+              agua y gas, comprar insumos y cuidar el espacio para que siga abierto
+              todos los días. Elegí la forma que más te guste.
+            </p>
+          </div>
+          <img class="donate__photo" src="assets/insumos.jpg" alt="Verduras frescas de estación en cajones de madera" loading="lazy">
+        </div>
+
+        <div class="donate__grid">
+
+          <article class="donate-card donate-card--featured">
+            <p class="donate-card__label">Transferencia o Mercado Pago</p>
+            <h3>Doná dinero</h3>
+            <p>
+              Con $5.000 cubrimos una vianda; con $25.000, una semana de meriendas.
+              Tu aporte también ayuda a pagar los servicios y los insumos de todos
+              los días.
+            </p>
+
+            <div class="donation-data">
+              <p>
+                <span>Alias</span>
+                <strong>merendero.enconstruccion</strong>
+              </p>
+              <p>
+                <span>CBU</span>
+                <strong>0000000000000000000000</strong>
+              </p>
+              <p>
+                <span>Titular</span>
+                <strong>Merendero En Construcción</strong>
+              </p>
+            </div>
+
+            <!-- REEMPLAZAR: link real de Mercado Pago -->
+            <a class="btn btn--green" href="https://link.mercadopago.com.ar/merenderoenconstruccion" target="_blank" rel="noopener">
+              Donar por Mercado Pago <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="donate-card">
+            <p class="donate-card__label">Alimentos e insumos</p>
+            <h3>Doná insumos</h3>
+            <p>
+              Todo lo que recibimos se usa en la cocina y en el día a día del
+              merendero. Siempre necesitamos:
+            </p>
+
+            <ul class="checklist">
+              <li>Alimentos no perecederos</li>
+              <li>Gas y carbón</li>
+              <li>Descartables y limpieza</li>
+              <li>Utensilios de cocina</li>
+            </ul>
+
+            <p class="donate-card__meta">
+              <strong>Recepción:</strong> martes de 10 a 18 h.
+              Coordinamos por WhatsApp para no hacerte esperar.
+            </p>
+
+            <a class="btn btn--outline-green" href="https://wa.me/5491100000000?text=Hola%2C%20quiero%20donar%20insumos%20al%20merendero" target="_blank" rel="noopener">
+              Coordinar una donación
+            </a>
+          </article>
+
+          <article class="donate-card">
+            <p class="donate-card__label">Voluntariado</p>
+            <h3>Doná tu tiempo</h3>
+            <p>
+              Buscamos manos para cocinar, servir, acompañar las tareas y mantener
+              el espacio en condiciones. No hace falta experiencia: se aprende haciendo.
+            </p>
+
+            <ul class="checklist">
+              <li>Sábados de 10 a 13 h</li>
+              <li>Cocina y servicio</li>
+              <li>Apoyo escolar</li>
+              <li>Mantenimiento y limpieza</li>
+            </ul>
+
+            <p class="donate-card__meta">
+              Escribinos contándonos qué te gustaría hacer y te sumamos al equipo.
+            </p>
+
+            <a class="btn btn--outline-green" href="https://wa.me/5491100000000?text=Hola%2C%20quiero%20ser%20voluntario%2Fa%20en%20el%20merendero" target="_blank" rel="noopener">
+              Quiero ser voluntario/a
+            </a>
+          </article>
+
+        </div>
+
+        <div class="donate__note">
+          <p>
+            <strong>¿Tenés una empresa o querés armar una colecta?</strong>
+            Podemos coordinar la entrega, difundir la campaña y contar en qué se usó cada aporte.
+          </p>
+          <!-- REEMPLAZAR: correo de contacto -->
+          <a class="btn btn--outline" href="mailto:hola@merenderoenconstruccion.org">Escribinos</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         5. UBICACIÓN
+         REEMPLAZAR: dirección real, horarios y cómo llegar
+         ===================================================== -->
+    <section class="location section" id="ubicacion" aria-labelledby="location-title">
+      <div class="container location__grid">
+
+        <div class="location__intro">
+          <p class="eyebrow">Ubicación</p>
+          <h2 id="location-title">Estamos cerca del Obelisco</h2>
+          <p>
+            Usamos la ubicación del Obelisco como ejemplo para esta maqueta.
+            Cuando el merendero tenga su dirección definitiva, se cambia acá y en el mapa.
+          </p>
+
+          <div class="info-list">
+            <div class="info">
+              <span class="info__icon" aria-hidden="true">📍</span>
+              <div>
+                <h3>Dirección</h3>
+                <p>Av. 9 de Julio y Av. Corrientes — Obelisco, CABA</p>
+                <p class="note">Ubicación de ejemplo</p>
+              </div>
+            </div>
+
+            <div class="info">
+              <span class="info__icon" aria-hidden="true">🕘</span>
+              <div>
+                <h3>Horarios</h3>
+                <p>Lunes a viernes de 11:00 a 15:00 h</p>
+                <p>Sábados de 10:00 a 13:00 h</p>
+              </div>
+            </div>
+
+            <div class="info">
+              <span class="info__icon" aria-hidden="true">🚌</span>
+              <div>
+                <h3>Cómo llegar</h3>
+                <p>Subte B, C o D — Estación Obelisco.</p>
+                <p>Colectivos 7, 24, 26, 29 y 50.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="location__actions">
+            <a class="btn btn--dark" href="https://www.google.com/maps/search/?api=1&query=Obelisco+Buenos+Aires" target="_blank" rel="noopener">
+              Abrir en Google Maps <span aria-hidden="true">↗</span>
+            </a>
+            <a class="btn btn--outline-green" href="#contacto">Escribinos</a>
+          </div>
+        </div>
+
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps?q=Obelisco,+Buenos+Aires&output=embed"
+            title="Mapa con la ubicación de ejemplo del merendero en el Obelisco"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         6. CONTACTO
+         REEMPLAZAR: teléfono, correo y redes sociales
+         ===================================================== -->
+    <section class="contact section" id="contacto" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact__card">
+
+          <div class="contact__intro">
+            <p class="eyebrow eyebrow--light">Contacto</p>
+            <h2 id="contact-title">¿Charlamos?</h2>
+            <p>
+              Podés escribirnos para donar, sumarte como voluntario/a, acercar
+              materiales o simplemente conocer más sobre el merendero.
+            </p>
+            <p class="contact__note">Respondemos de lunes a sábado.</p>
+          </div>
+
+          <div class="contact__links">
+            <a class="contact-link" href="https://wa.me/5491100000000?text=Hola%2C%20quiero%20contactarme%20con%20el%20merendero" target="_blank" rel="noopener">
+              <span class="contact-link__icon" aria-hidden="true">💬</span>
+              <span>
+                <small>WhatsApp</small>
+                <strong>11 5555-5555</strong>
+              </span>
+              <span class="contact-link__arrow" aria-hidden="true">→</span>
+            </a>
+
+            <a class="contact-link" href="mailto:hola@merenderoenconstruccion.org">
+              <span class="contact-link__icon" aria-hidden="true">✉️</span>
+              <span>
+                <small>Correo</small>
+                <strong>hola@merenderoenconstruccion.org</strong>
+              </span>
+              <span class="contact-link__arrow" aria-hidden="true">→</span>
+            </a>
+
+            <a class="contact-link" href="https://www.instagram.com/" target="_blank" rel="noopener">
+              <span class="contact-link__icon" aria-hidden="true">📷</span>
+              <span>
+                <small>Instagram</small>
+                <strong>@merenderoenconstruccion</strong>
+              </span>
+              <span class="contact-link__arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================
+       PIE DE PÁGINA
+       ===================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <a class="brand" href="#inicio">
+            <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true">
+              <rect width="64" height="64" rx="14" fill="#E9B44C"/>
+              <path d="M25 20c0-4 3.5-4 3.5-8M35 20c0-4 3.5-4 3.5-8" fill="none" stroke="#2E5E45" stroke-width="3" stroke-linecap="round"/>
+              <path d="M15 31h34v5a17 17 0 0 1-17 17 17 17 0 0 1-17-17z" fill="#1D3B2C"/>
+              <path d="M11 29h42" fill="none" stroke="#2E5E45" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+            <span class="brand__text">
+              <strong>Merendero</strong>
+              <span>En Construcción</span>
+            </span>
+          </a>
+          <p>
+            Comida, comunidad y un merendero que se sostiene entre todos. Un espacio
+            para compartir la mesa y crear oportunidades en el barrio.
+          </p>
+        </div>
+
+        <nav aria-label="Secciones del sitio">
+          <h3>Secciones</h3>
+          <ul>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#que-hacemos">Qué hacemos</a></li>
+            <li><a href="#donar">Donar</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h3>Contacto</h3>
+          <ul>
+            <!-- REEMPLAZAR: datos de contacto -->
+            <li><a href="https://wa.me/5491100000000">WhatsApp: 11 5555-5555</a></li>
+            <li><a href="mailto:hola@merenderoenconstruccion.org">hola@merenderoenconstruccion.org</a></li>
+            <li>Obelisco, CABA</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Seguinos</h3>
+          <ul>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="#donar">Cómo colaborar</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 Merendero En Construcción. Todos los derechos reservados.</p>
+        <p>Sitio de ejemplo realizado en el Taller de Maquetas Web.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
